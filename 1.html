@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>salam</h1>
+
+    <script>
+        function btidclick(){
+            let x;
+            x = document.getElementById("inputiD").value;
+             
+           document.getElementById('hh').innerHTML= x   
+        } 
+
+    </script>
+
+    <p id="hh">sample code</p>
+
+    <form id="frmSample" action="" method="get">
+        <h3>Search Form</h3>
+        <input id='inputiD' type="text" name="name" maxlength="20" size="20" placeholder="Enter  your name">
+
+        <input  onclick="btidclick()" type="button" value="Search">
+    </form>
+
+
+
+    
+
 </body>
+
 </html>
